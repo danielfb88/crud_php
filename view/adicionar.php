@@ -1,7 +1,4 @@
 <?php
-ini_set('display_errors', 1);
-error_reporting(E_ALL);
-
 require_once('controller/Estado.php');
 $estado = new Estado();
 $arrEstados = $estado->getTodosOsEstados();
@@ -27,15 +24,13 @@ $arrEstados = $estado->getTodosOsEstados();
 
 			Email: <input type="text" name="email"></br>
 			
-			Estado: 
-				<?php 
-					echo '<select id="sl_estados">';
-					foreach($arrEstados as $estado) {
-						echo "<option value ='{$estado->getId()}'>{$estado->getUF()}</option>";
-					}
-					echo '</select></br>';
-				?>
-				
+				<select id="sl_estados">
+					<?php 
+						foreach($arrEstados as $estado) {
+							echo "<option value ='{$estado->id}'>{$estado->uf}</option>";
+						}
+					?>
+				</select></br>
 
 			Cidade: <input type="text" name="sl_cidades"></br>
 		</form>
