@@ -1,5 +1,5 @@
 <?php 
-require_once('model/DAOCidade.php');
+include_once '../model/DAOCidade.php';
 
 class Cidade {
 	private $daoCidade;
@@ -45,12 +45,12 @@ class Cidade {
 
 			$cidade->setId($row['id_cidade']);
 			$cidade->setIdEstado($row['id_estado']);
-			$estado->setNome($row['nome']);
+			$cidade->setNome($row['nome']);
 
 			$arrObjCidades[] = $cidade;
 		}	
 
-		return $arrObjCidade;
+		return $arrObjCidades;
 	}
 
 }

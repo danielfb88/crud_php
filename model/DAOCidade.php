@@ -1,5 +1,5 @@
 <?php 
-require_once('model/Conexao.php');
+require_once('Conexao.php');
 
 class DAOCidade {
 
@@ -8,7 +8,7 @@ class DAOCidade {
 	public function getCidadesByIdEstado($idEstado) {
 		$arr = null;
 
-		$sql = "SELECT * FROM cidade WHERE estado = '{$idEstado}'";
+		$sql = "SELECT * FROM cidade WHERE id_estado = '{$idEstado}'";
 
 		try {
 
