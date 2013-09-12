@@ -1,5 +1,5 @@
 <?php 
-require_once('model/DAOCliente.php');
+include_once('../model/DAOCliente.php');
 
 class Cliente {
 	private $daoCliente;

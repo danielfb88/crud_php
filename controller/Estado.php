@@ -1,5 +1,5 @@
 <?php 
-require_once('model/DAOEstado.php');
+include_once('../model/DAOEstado.php');
 
 class Estado {
 	private $daoEstado;

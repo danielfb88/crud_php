@@ -12,7 +12,7 @@ switch ($action) {
 		$arrCidades = $cidade->getCidadesByIdEstado($idEstado);
 
 		echo '<label>Cidades:</label>';
-		echo '<select id="cb_cidade">';
+		echo '<select id="cb_cidade" name="cb_cidade">';
 		foreach($arrCidades as $cidade) {
 			echo "<option value='{$cidade->getId()}'>{$cidade->getNome()}</option>";
 		}
