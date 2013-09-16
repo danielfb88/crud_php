@@ -1,3 +1,4 @@
+// #JQuery, Ajax
 function buscar_cidades(){
 	// codigo do estado escolhido
 	var id_estado = $('#cb_estados').val();  
@@ -10,4 +11,19 @@ function buscar_cidades(){
 			$('#cidade_load').html(dataReturn);
 		});
 	}
+}
+
+// Validar campos
+function validar(tipo, valor) {
+	switch(tipo)
+	{
+		case "data":
+			// codigo regex
+			break;
+		case "cpf":
+			// codigo regex
+			break;
+		case "email":
+			// codigo regex
+			break;
 }
